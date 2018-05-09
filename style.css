@@ -1,0 +1,15 @@
+*{
+  background-image: url(bgrnd.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: auto;
+  font-family: "ArcadeClassic Regular";
+  color: white;
+  word-spacing: 4px;
+}
