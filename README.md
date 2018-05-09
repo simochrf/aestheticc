@@ -1,1 +1,0 @@
-# simochrf.github.io
