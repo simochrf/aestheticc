@@ -6,10 +6,10 @@
   background-size: cover;
 }
 
-h1 {
+.header {
   text-align: center;
   padding-bottom: auto;
   font-family: "ArcadeClassic Regular";
   color: white;
-  word-spacing: 4px;
+  letter-spacing: 4px;
 }
