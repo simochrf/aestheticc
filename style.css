@@ -1,21 +1,37 @@
-*{
+
+
+body{
   background-image: url(bgrnd.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+position: fixed;
 }
 
 div.navsec {
   display: block;
   font-size: 30px;
   font-family: "ArcadeClassic Regular";
+  background: transparent;
+  position: fixed;
 }
 
 #sitename,#suart,#cntctfrm{
   text-decoration: none;
-  color: white;
+  color: black ;
   margin: 70px;
-  background: transparent;
   word-spacing: 5px;
+  background-color: RGB(212,208,200);
+  border: 3px outset white;
+}
+img {
+  height: 220px;
+  width: 350px;
+border: 3px outset white;
+margin: 0 5px 0 5px;
+
+}
+div.body-content{
+  margin: 10em 0 30em 3em;
 }
