@@ -6,11 +6,16 @@
   background-size: cover;
 }
 
-.header {
+div.navsec {
+  display: block;
   font-size: 30px;
-  text-align: center;
-  padding-bottom: auto;
   font-family: "ArcadeClassic Regular";
+}
+
+#sitename,#suart,#cntctfrm{
+  text-decoration: none;
   color: white;
-letter-spacing: 2px;
+  margin: 70px;
+  background: transparent;
+  word-spacing: 5px;
 }
