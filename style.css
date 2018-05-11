@@ -53,23 +53,32 @@ margin-right: 10px;
 }
 #resourcesname{
   text-align: center;
-  color: white;
+  color: pink;
   margin-right: 30px;
 }
-div.resource-content a{
-  text-decoration: none;
+.reslinks {
+  display: block;
   color: white;
-  text-align: justify;
-  margin: 20px 0 20px 290px;
-  width: 30em;
+  text-decoration-color: pink;
+  margin-left: 330px;
+  margin-bottom: 5px;
+  height: 10px;
+  width: auto;
+  font-family: "VCR OSD Mono Regular";
+
 }
+div.resource-content{
+  height: 3cm;
+  width: auto;
+}
+
 
 /* Responsive css mobile */
 @media only screen and (max-width:580px){
 html {
   background-image: url("mobile-bgrnd.jpg");
   background-size: cover;
-  max-width: 100%;
+  max-width: auto;
   max-height: auto;
   font-size: 4.5vw;
   }
@@ -78,12 +87,18 @@ html {
   }
   .sitelogo img{
     opacity: 1;
-    margin: 0 70px 0 60px;
+    margin: 0 70px 0 70px;
   }
   #randompicks{
     margin: 80px 0 30px 110px;
     box-sizing: content-box;
     text-align: center;
-  }
-
+}
+#resourcesname{
+  margin: 100px 0 30px 60px;
+  color: white;
+}
+.reslinks {
+  margin: 0 0 14.5px 50px;
+}
 }
