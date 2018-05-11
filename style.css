@@ -14,7 +14,7 @@ div.navsec {
   background: transparent;
   position: sticky;
 }
-#suart,#cntctfrm{
+#suart,#rescs{
   text-decoration: none;
   color: black ;
   background-color: RGB(212,208,200);
@@ -25,7 +25,7 @@ div.navsec {
 #suart{
   float: left;
 }
-#cntctfrm{
+#rescs{
   float: right;
 }
 img.sitelogo{
