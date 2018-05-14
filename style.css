@@ -41,6 +41,9 @@ margin-left: auto;
 margin-right: auto;
   display: block;
   position: relative;
+  margin-top: 20px;
+  transform: translateY(-2em);
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 a.drpcntnt  {
   text-decoration: none;
@@ -55,11 +58,10 @@ a.drpcntnt  {
 }
 #suart{
 float: left;
+margin-right: 100px;
 }
 #suart,#rescs{
   text-align: left;
-  left: 0;
-  right: 0;
 }
 a.sitelogo-btn-img{
   height: 236px;
@@ -71,6 +73,8 @@ div.sitelogo-btn,a.sitelogo-btn-img {
 }
 .sitelogo-btn:hover .drpcntnt{
   display: block;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
 }
 .body-content img {
   height: 220px;
