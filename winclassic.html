@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Aesthteticc" content="NOTHING">
+    <title>Ａｅｓｔｈｅｔｉｃｃ　遺応哀</title>
+    <link rel="stylesheet" type="text/css" href="/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" media="all" href="winclassic.css">
+    <link rel="icon" href="res/vaporwave-png.ico">
+    <script type="text/javascript">
+  function GetClock(){
+  var d=new Date();
+  var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+  if(nhour==0){ap=" AM";nhour=12;}
+  else if(nhour<12){ap=" AM";}
+  else if(nhour==12){ap=" PM";}
+  else if(nhour>12){ap=" PM";nhour-=12;}
+
+  if(nmin<=9) nmin="0"+nmin;
+
+  document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+ap+"";
+  }
+
+  window.onload=function(){
+  GetClock();
+  setInterval(GetClock,1000);
+  }
+  </script>
+</head>
+<body>
+  <div class="leftsec">
+<div class="gallery-icon"><a href="#gallery"></a><p>Gallery</p></div>
+</div>
+  <div id="gallery">
+    <div class="gallery-content">
+    </div>
+  </div>
+<div class="taskbar">
+<span class="start">
+  <img src="res/nav-icons/windows.png" alt="" title="START HERE">
+</span>
+<span id="clockbox"></span>
+</div>
+</body>
+</html>

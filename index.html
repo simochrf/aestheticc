@@ -7,8 +7,24 @@
     <link rel="stylesheet" type="text/css" href="/fonts/fonts.css">
     <link rel="stylesheet" type="text/css" media="all" href="style.css">
     <link rel="icon" href="res/vaporwave-png.ico">
+    <script type="text/javascript">
+    document.onreadystatechange = function () {
+    var state = document.readyState
+    if (state == 'interactive') {
+         document.getElementById('site-wrap').style.visibility="hidden";
+    } else if (state == 'complete') {
+        setTimeout(function(){
+           document.getElementById('interactive');
+           document.getElementById('loader').style.visibility="hidden";
+           document.getElementById('site-wrap').style.visibility="visible";
+        },4000);
+    }
+    }
+    </script>
 </head>
 <body>
+  <div id="site-wrap">
+  <div id="loader"></div>
     <div class="index-masthead">
       <div class="sitelogo">
         <div class="sitelogo-btn">
@@ -30,16 +46,30 @@
     <div class="body-area" id="bodywrap">
       <p>Choose Any Category</p>
  <div class="body-header">
-   <a href="#" id="aesthetic"><img src="res/nav-icons/art.png" alt="aesthetic"></a>
-   <a href="#" id="vaporwave"><img src="res/nav-icons/vaporwave.png" alt=""></a>
-   <a href="#" id="gamewave"><img src="res/nav-icons/gamewave.png" alt=""></a>
-   <a href="#" id="pixelwave"><img src="res/nav-icons/pixel.png" alt="">  </a>
+   <span class="aesthetic">
+     <span class="hovertext">Aesthetic</span>
+   <a href="#"><img src="res/nav-icons/art.png" alt="aesthetic"></a>
+ </span>
+ <span class="vaporwave">
+   <span class="hovertext">Vaporwave</span>
+   <a href="#"><img src="res/nav-icons/vaporwave.png" alt=""></a>
+ </span>
+ <span class="gamewave">
+   <span class="hovertext">Gamewave</span>
+   <a href="#"><img src="res/nav-icons/gamewave.png" alt=""></a>
+ </span>
+ <span class="pixelwave">
+   <span class="hovertext">Pixelwave</span>
+   <a href="#"><img src="res/nav-icons/pixel.png" alt=""></a>
+ </span>
  </div>
+ <span id="trends">Trending</span>
  <div class="body-content">
    <a href="images/vapwave1.jpg" target="_blank"><img src="images/vapwave1.jpg" alt="WTF"></a>
    <a href="images/vapwave2.jpg" target="_blank"><img src="images/vapwave2.jpg" alt="WTF"></a>
    <a href="images/trafficlights.jpg" target="_blank"><img src="images/trafficlights.jpg" alt="WTF"></a>
  </div>
+</div>
 </div>
 </body>
 </html>

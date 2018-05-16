@@ -1,0 +1,83 @@
+body{
+  background-image: url("bgrnd.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "Tahoma";
+  height: 700px;
+}
+.leftsec{
+  height: 650px;
+  width: 100px;
+  position: absolute;
+  z-index: 2;
+  display: inline-grid;
+}
+.gallery-icon{
+  background-image: url("res/nav-icons/gallery.ico");
+  background-size: cover;
+  height: 48px;
+  width: 48px;
+  bottom: 60px;
+  margin-left: 5px;
+position: absolute;
+cursor: pointer;
+z-index: -1;
+}
+
+.gallery-icon p{
+  height: 18px;
+  width: 48px;
+  margin: 0;
+  padding-top: 42px;
+  color: white;
+  position: absolute;
+}
+
+.taskbar{
+  background-color: RGB(212,208,200);
+  border: 3px outset white;
+  bottom: 1px;
+  height: 44px;
+  display: block;
+  z-index: 3;
+  position: fixed;
+width: 100%;
+margin: 0;
+}
+.taskbar .start img {
+  height: 36px;
+  width: 48px;
+  padding-top: 3px;
+}
+.taskbar .start:hover {
+  border: 1.5px inset white;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#clockbox{
+  float: right;
+  height: 29px;
+  width: 68px;
+padding: 10px 8px 0 8px;
+border: 3px inset white;
+}
+#gallery{
+  background-image: url("res/5.png");
+  background-size: cover;
+  height: 540px;
+  width: 690px;
+  position: relative;
+  display: inline-block;
+  visibility: hidden;
+  z-index: 100;left: 90px;
+
+}
+.gallery-content{
+  height: 425px;
+  width: 670px;
+  position: absolute;
+  margin: 75px 0 0 13px;
+  overflow: scroll;
+}
