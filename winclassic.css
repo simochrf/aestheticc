@@ -6,41 +6,32 @@ body{
   font-family: "Tahoma";
   height: 700px;
 }
-.leftsec{
-  height: 650px;
-  width: 100px;
-  position: absolute;
-  z-index: 2;
-  display: inline-grid;
-}
 .gallery-icon{
   background-image: url("res/nav-icons/gallery.ico");
   background-size: cover;
   height: 48px;
   width: 48px;
-  bottom: 60px;
+  bottom: 100px;
   margin-left: 5px;
 position: absolute;
-cursor: pointer;
-z-index: -1;
 }
 
-.gallery-icon p{
+a#gallery-btn{
   height: 18px;
   width: 48px;
   margin: 0;
   padding-top: 42px;
-  color: white;
   position: absolute;
+  text-decoration: none;
+  color: white;
+  z-index: 2;
 }
-
 .taskbar{
   background-color: RGB(212,208,200);
   border: 3px outset white;
   bottom: 1px;
   height: 44px;
   display: block;
-  z-index: 3;
   position: fixed;
 width: 100%;
 margin: 0;
@@ -68,16 +59,36 @@ border: 3px inset white;
   background-size: cover;
   height: 540px;
   width: 690px;
-  position: relative;
-  display: inline-block;
-  visibility: hidden;
-  z-index: 100;left: 90px;
-
+  position: fixed;
+display: none;
+  z-index: 1;
+  top: 0;
+  left: 20%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
 }
 .gallery-content{
   height: 425px;
   width: 670px;
   position: absolute;
   margin: 75px 0 0 13px;
-  overflow: scroll;
+  display: block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#gallery:target {
+  display: inline-block;
+}
+.close{
+	position: relative;
+	width: 28px;
+  height: 25px;
+  float: right;
+  margin: 10px 7px 0 0;
+}
+div.gallery-content img {
+  border: 3px outset white;
+  margin: 10px 10px 0 20px;
+  height: 100px;
+  width: 150px;
 }
