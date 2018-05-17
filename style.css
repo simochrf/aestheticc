@@ -18,7 +18,7 @@ background-attachment: fixed;
     height: 100%;
     position: fixed;
     z-index: 9999;
- background: url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center;
+ background: url("res/loading.gif") no-repeat center center;
 }
 .masthead{
   text-align: center;
@@ -31,7 +31,7 @@ height: 650px;
   text-align: center;
 }
 .body-area{
-  margin-top: 110px;
+  margin-top: 40px;
   z-index: -1;
 }
 div.viewbody-btn a{
@@ -114,11 +114,44 @@ div.sitelogo-btn,a.sitelogo-btn-img {
 .body-content img {
 border: 3px outset white;
 }
+.body-content{
+  height: auto;
+}
 div.body-header{
   text-align: center;
   margin-bottom: 50px;
   margin-top: 60px;
   z-index: -1;
+}
+.leftsec{
+  width: 308px;
+  height: auto;
+  display: inline-block;
+  position: absolute;
+  left: 50px;
+  margin
+}
+.leftsec img,.rightsec img {
+  margin-bottom: 20px;
+
+}
+.centersec img {
+  margin-bottom: 40px;
+}
+.centersec{
+  display: inline-block;
+  width: 308px;
+  height: auto;
+  position: absolute;
+  right: 50%;
+  left: 37.5%;
+}
+.rightsec {
+  display: inline-block;
+  width: 308px;
+  height: auto;
+  position: absolute;
+  right: 50px;
 }
 div.body-header span:hover{
   background-color: RGB(212,208,200);
@@ -133,20 +166,19 @@ div.body-area p{
 #resourcesname{
   text-align: center;
   color: pink;
-  margin: 50px 15px 0 0;
+  margin: 28px 15px 0 0;
 }
 .reslinks {
   display: block;
   color: white;
   text-decoration-color: pink;
-  margin-left: 330px;
-  margin-bottom: 5px;
-  height: auto;
-  width: auto;
 }
 div.resource-content{
 margin-left: auto;
 margin-right: auto;
+display: inline-block;
+;position: relative;
+left: 28%;
 }
 #trends{
   margin: 0 0 30px 0;
@@ -156,12 +188,12 @@ margin-right: auto;
 }
 
 .myImg {
-    border-radius: 5px;
+  opacity: 0.93;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.myImg:hover {opacity: 0.7;}
+.myImg:hover {opacity: 1;}
 
 /* The Modal (background) */
 .modal {
@@ -253,9 +285,6 @@ html {
   font-size: 20px;
   max-width: auto;
   max-height: auto;
-  }
-  .body-content img{
-    margin: 0 50px 30px 40px;
   }
   #randompicks{
     margin: 80px 0 30px 110px;

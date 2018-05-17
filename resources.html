@@ -7,8 +7,24 @@
     <link rel="stylesheet" type="text/css" href="/fonts/fonts.css">
     <link rel="stylesheet" type="text/css" media="all" href="style.css">
     <link rel="icon" href="res/vaporwave-png.ico">
+    <script type="text/javascript">
+    document.onreadystatechange = function () {
+    var state = document.readyState
+    if (state == 'interactive') {
+         document.getElementById('site-wrap').style.visibility="hidden";
+    } else if (state == 'complete') {
+        setTimeout(function(){
+           document.getElementById('interactive');
+           document.getElementById('loader').style.visibility="hidden";
+           document.getElementById('site-wrap').style.visibility="visible";
+        },4000);
+    }
+    }
+    </script>
 </head>
 <body>
+  <div id="site-wrap">
+  <div id="loader"></div>
   <div class="masthead">
     <div class="sitelogo">
       <div class="sitelogo-btn">
@@ -29,5 +45,6 @@
        <a href="http://www.reddit.com/Vaporwave/" target="_blank" class="reslinks">Vaporwave on Reddit</a>
      </div>
    </div>
+ </div>
    </body>
  </html>
