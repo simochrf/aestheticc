@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Aesthteticc" content="NOTHING">
+    <title>Ａｅｓｔｈｅｔｉｃｃ　遺応哀</title>
+    <link rel="stylesheet" type="text/css" href="/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" media="all" href="style.css">
+    <link rel="icon" href="res/vaporwave-png.ico">
+    <script type="text/javascript">
+    document.onreadystatechange = function () {
+    var state = document.readyState
+    if (state == 'interactive') {
+         document.getElementById('site-wrap').style.visibility="hidden";
+    } else if (state == 'complete') {
+        setTimeout(function(){
+           document.getElementById('interactive');
+           document.getElementById('loader').style.visibility="hidden";
+           document.getElementById('site-wrap').style.visibility="visible";
+        },4000);
+    }
+    }
+    </script>
+</head>
+<body>
+  <div id="site-wrap">
+  <div id="loader"></div>
+    <div class="index-masthead">
+      <div class="sitelogo">
+        <div class="sitelogo-btn">
+        <a class="sitelogo-btn-img" href="/" title="Ｈｏｍｅ　ｓｗｅｅｔ　Ｈｏｍｅ"><img src="res/vaporwave-logo.png" alt=""></a>
+        <div class="drpcntnt">
+        <a href="#" id="suart" class="drpcntnt" title="Ｉｆ　ｙｏｕ　ｗａｎｔ．．．">Submit Your Art</a>
+        <a href="resources.html" id="rescs" class="drpcntnt" title="ｗｈｅｒｅ　ａｒｅ　ｙｏｕ　ｇｏｉｎ ？">Resources</a>
+      </div>
+      </div>
+     </div>
+     <div class="quotes-imgs">
+       <img src="images/space.png" alt="imagine space">
+       <img src="images/stardust.png" alt="you are a stardust">
+     </div>
+     <div class="viewbody-btn">
+        <a href="#bodywrap">Take a look</a>
+     </div>
+   </div>
+    <div class="body-area" id="bodywrap">
+      <p>Choose Any Category</p>
+ <div class="body-header">
+   <span class="aesthetic" id="aesthetic-btn">
+     <span class="hovertext">Aesthetic</span>
+   <a href="aesthetic.html" target="_blank" ><img src="res/nav-icons/art.png"></a>
+ </span>
+ <span class="vaporwave">
+   <span class="hovertext">Vaporwave</span>
+   <a href="vapwave.html" target="_blank"><img src="res/nav-icons/vaporwave.png" alt=""></a>
+ </span>
+ <span class="gamewave">
+   <span class="hovertext">Gamewave</span>
+   <a href="#"><img src="res/nav-icons/gamewave.png" alt=""></a>
+ </span>
+ <span class="pixelwave">
+   <span class="hovertext">Pixelwave</span>
+   <a href="#"><img src="res/nav-icons/pixel.png" alt=""></a>
+ </span>
+ </div>
+ <span id="category">Trending</span>
+ <div class="body-content">
+   <div class="leftsec">
+     <img class="myImg" id="vapwave-img" src="images/vapwave1.jpg" width="300" height="200" >
+      <img class="myImg" src="images/7963c4a.jpg" height="420" width="300">
+      <img class="myImg" src="images/eb32605.jpg" height="420" width="300">
+   </div>
+<div class="centersec">
+  <img class="myImg" src="images/vapor1503010252185.png" width="300" height="440">
+  <img class="myImg" src="images/vapwave2.jpg"  width="300" height="200" >
+  <img class="myImg" src="images/Wallpaper-1752.jpg" width="300" height="400" >
+</div>
+<div class="rightsec">
+  <img class="myImg" src="images/Wallpaper-8874.jpg" height="420" width="300">
+  <img class="myImg" src="images/Wallpaper-7913.jpg" width="300" height="420">
+  <img class="myImg" id="vapwave-img" src="images/trafficlights.jpg" width="300" height="200">
+</div>
+   <div id="myModal" class="modal">
+     <span class="close">&times;</span>
+     <img class="modal-content" id="img01">
+     <div id="caption"></div>
+   </div>
+ </div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+</body>
+</html>
