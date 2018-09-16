@@ -15,6 +15,14 @@ body{
 	z-index: 9999;
 background: url(res/preloader.gif) center no-repeat #008080;
 }
+#bgrndchanger {
+  right: 20px;
+  bottom: 60px;
+  position: fixed;
+  border-style: outset;
+  background-color: RGB(212,208,200);
+  cursor: pointer;
+}
 .gallery-icon{
   background-image: url("res/nav-icons/gallery.ico");
   background-size: cover;

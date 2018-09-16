@@ -6,6 +6,7 @@
     <title>Ａｅｓｔｈｅｔｉｃｃ　遺応哀</title>
     <link rel="stylesheet" type="text/css" href="/fonts/fonts.css">
     <link rel="stylesheet" type="text/css" media="all" href="winclassic.css">
+    <link rel="stylesheet" type="text/css" href="chardinjs.css">
     <link rel="icon" href="res/vaporwave-png.ico">
     <script type="text/javascript">
   function GetClock(){
@@ -28,14 +29,29 @@
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script type="text/javascript">
+    function randomImg() {
+      var myImages1 = new Array ();
+      myImages1[1] = "res/bgrnd1.jpg";
+      myImages1[2] = "res/bgrnd2.jpg";
+      myImages1[3] = "res/bgrnd3.jpg";
+      var rnd = Math.floor( Math.random() * myImages1.length );
+      if( rnd == 0 ) {
+        rnd =1;
+      }
+      document.body.style.backgroundImage = "url(" + myImages1[rnd] + ")";
+    }
+</script>
 </head>
 <script type="text/javascript">
 $(window).load(function() {
-  // Animate loader off screen
-  $(".preloader").fadeOut(5000);
+ $(".preloader").fadeOut(5000);
 });
 </script>
 <body>
+  <span>
+    <button type="button" id="bgrndchanger" class="rndmbgrnd" onclick="randomImg()">ＲＡＮＤＯＭＩＺＥ</button>
+  </span>
   <div class="preloader"></div>
 <div class="gallery-icon"><a href="#gallery" id="gallery-btn">Gallery</a></div>
   <div id="gallery">
