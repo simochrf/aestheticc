@@ -26,8 +26,17 @@
   setInterval(GetClock,1000);
   }
   </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 </head>
+<script type="text/javascript">
+$(window).load(function() {
+  // Animate loader off screen
+  $(".preloader").fadeOut("slow");;
+});
+</script>
 <body>
+  <div class="preloader"></div>
 <div class="gallery-icon"><a href="#gallery" id="gallery-btn">Gallery</a></div>
   <div id="gallery">
     <a href="#close" title="Close" class="close"></a>

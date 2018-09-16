@@ -6,6 +6,15 @@ body{
   font-family: "Tahoma";
   height: 700px;
 }
+.preloader{
+  position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+background: url(res/preloader.gif) center no-repeat #008080;
+}
 .gallery-icon{
   background-image: url("res/nav-icons/gallery.ico");
   background-size: cover;
