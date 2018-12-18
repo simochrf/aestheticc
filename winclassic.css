@@ -5,6 +5,7 @@ body{
   margin: 0;
   font-family: "Tahoma";
   height: 700px;
+  overflow: hidden;
 }
 .preloader{
   position: fixed;
@@ -46,7 +47,7 @@ a#gallery-btn{
 .taskbar{
   background-color: RGB(212,208,200);
   border: 3px outset white;
-  bottom: 1px;
+  bottom: 0.3px;
   height: 44px;
   display: block;
   position: fixed;
@@ -67,9 +68,10 @@ margin: 0;
 #clockbox{
   float: right;
   height: 29px;
-  width: 68px;
+  width: 59px;
 padding: 10px 8px 0 8px;
 border: 3px inset white;
+margin: 0 3px 0 0;
 }
 #gallery{
   background-image: url("res/5.png");
