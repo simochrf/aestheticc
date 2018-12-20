@@ -7,6 +7,13 @@ body{
   height: 700px;
   overflow: hidden;
 }
+
+.adsection{
+  height: 528px;
+  width: 300px;
+  position: absolute;
+  right: 1px;
+}
 .preloader{
   position: fixed;
 	left: 0px;
