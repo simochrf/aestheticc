@@ -11,7 +11,7 @@ body{
 .adsection{
   height: 528px;
   width: 300px;
-  position: absolute;
+  position: fixed;
   right: 1px;
 }
 .preloader{
